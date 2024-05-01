@@ -1,0 +1,13 @@
+{
+  :mvn/repos
+   {"vendredi" {:url "https://repository.hellonico.info/repository/hellonico/"}}
+:deps {
+  origami/origami {:mvn/version "4.9.0-1"}
+  origami/filters {:mvn/version "1.44"}
+  ;com.phronemophobic/llama-clj {:mvn/version "0.8.2"}
+  com.phronemophobic/llama-clj-combined {:mvn/version "0.8.2"}
+  ; com.phronemophobic/clong {:mvn/version "1.1"}
+}
+;:local-llama {:jvm-opts ["-Djava.library.path=./llama.cpp/buildosx"]} 
+;:jvm-opts ["-Djava.library.path=./llama.cpp/buildosx"]
+}
