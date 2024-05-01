@@ -6,7 +6,11 @@
             [clojure.string :as str]))
 
 (def fi (origami.filters.Annotate.))
-(u/simple-cam-window (fn [mat] (.apply fi mat)))
+(def ct (origami.filters.cartoon.Cartoon2.))
+
+(u/simple-cam-window (fn [mat] (.apply fi (.apply ct mat))))
+
+; (u/simple-cam-window (fn [mat] (.apply fi mat)))
 (.setText fi "")
 (.setPoint fi "10,150")
 (.setFontSize fi 1.0)
