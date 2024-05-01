@@ -1,2 +1,5 @@
 llama.cpp
 .cpcache
+.DS_Store
+.idea/
+llamaclj-on-cam.iml
