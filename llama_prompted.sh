@@ -1,0 +1,1 @@
+clojure -M hello.clj "who was Victor Hugo?" 

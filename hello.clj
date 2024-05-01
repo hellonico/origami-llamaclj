@@ -20,6 +20,7 @@
   (if (or (= "." s))
     (swap! hello #(str % "\n"))
     (swap! hello #(str % s)))
+  ; (println s)
   (.setText fi @hello))
 
 (defn print-response
@@ -30,4 +31,6 @@
     nil
     (llama/generate ctx prompt nil)))
 
-(print-response ctx "Who was Napoleon?")
+(def prompt (or (first *command-line-args*) "Who was Napoleon?"))
+(println prompt)
+(print-response ctx prompt)
