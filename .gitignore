@@ -3,3 +3,4 @@ llama.cpp
 .DS_Store
 .idea/
 llamaclj-on-cam.iml
+out/
